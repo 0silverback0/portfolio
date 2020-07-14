@@ -12,7 +12,7 @@ import './App.css'
 const style = {
   display: "flex",
   justifyContent: "center",
-  alignitems: "center"
+  alignItems: "center",
 }
 
 const size = {
@@ -20,15 +20,12 @@ const size = {
   height: '800px'
 }
 
-const noMargin = {
-  marginTop: '0px'
-}
 class App extends Component {
   render () {
   return (
     <div>
       <img style={size} src={Me} alt='a pic of me' />
-      <Header style={noMargin}/>
+      <Header />
       <div style={style}>
         <Card name="Blog App" src="https://udacityblogsite.netlify.app/" img={Pic} github="https://github.com/0silverback0/udacityBlog"
         des="Project one. The objective was to build a simple blog site using HTML and CSS. Specifically using flexbox and grid was a requirement for this project" />
@@ -40,6 +37,7 @@ class App extends Component {
       </div>
       <Footer />
     </div>
+    
   )
   }
 }

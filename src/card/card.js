@@ -1,13 +1,12 @@
 import React from 'react'
 
 const style = {
-    //height: '300px',
+    //height: '550px',
     width: '400px',
     border: ' 1px solid black',
     boxShadow: '2px 2px  5px blue',
     margin: '20px 0px 0px 20px',
-    padding: '10px',
-    textAlign: 'center'
+    padding: '10px'
 }
 
 const block = {
@@ -18,7 +17,7 @@ const block = {
 }
 
 const img = {
-    width: '400px',
+    width: '100%',
     height: '200px',
     marginBottom: '20px'
 }
