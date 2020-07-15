@@ -10,21 +10,15 @@ import './App.css'
 
 
 const style = {
-  display: "flex",
+  display: "block",
   justifyContent: "center",
-  alignItems: "center",
-}
-
-const size = {
-  width: '100%',
-  height: '800px'
 }
 
 class App extends Component {
   render () {
   return (
     <div>
-      <img style={size} src={Me} alt='a pic of me' />
+      <img id='picHead' src={Me} alt='a pic of me' />
       <Header />
       <div style={style}>
         <Card name="Blog App" src="https://udacityblogsite.netlify.app/" img={Pic} github="https://github.com/0silverback0/udacityBlog"
