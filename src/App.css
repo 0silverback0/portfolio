@@ -24,7 +24,10 @@
     text-align: center;
 }
 
- 
+h2{
+  text-align: center;
+  text-decoration: underline blue;
+}
 
 @media only screen and (min-width: 992px) {
   .card {
@@ -32,9 +35,7 @@
     width: 500px;
     margin: 10px;
   }
-}
 
-@media only screen and (min-width: 992px) {
   .cards {
     text-align: center;
   }
@@ -46,9 +47,7 @@
     width: 800px;
     margin: 10px;
   }
-}
 
-@media only screen and (min-width: 2560px) {
   .cards {
     display: flex;
     justify-content: center;
@@ -56,29 +55,51 @@
 }
 
 
-/* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
 
-/* Container for skill bars */
-.container {
-  width: 50%; /* Full width */
-  background-color: #ddd; /* Grey background */
-}
+
+
+/* skills bar */
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+  text-align: right; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
 }
 
-.html {width: 80%; background-color: #4CAF50;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.php {width: 60%; background-color: #808080;} /* Dark Grey */
-.mysql {width:60%; background-color: rgb(218, 53, 218)}
+.container {
+  width: 50%;
+  background-color: #ddd;
+}
+
+.html {width: 80%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #e2d40e;}
+.react {width: 30%; background-color: #0b63bb}
+.php {width: 60%; background-color: #7710d8;}
+.mysql {width:60%; background-color: #da0c0c}
 
 #skill{
   position: relative;
   left: 20%;
+}
+
+#certDiv{
+  display: flex;
+  justify-content: center;
+}
+.cert{
+  margin: 10px auto;
+  height: 300px;
+  width: 300px;
+}
+
+p skillbar{
+  width: 5px;
+  margin: 0px;
+}
+
+body{
+  width: 100%;
 }

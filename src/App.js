@@ -8,14 +8,8 @@ import Footer from './footer/footer.js'
 import Me from './me.JPG'
 import './App.css'
 import Skills from './skillsbar/Skills.js'
-
-/*
-const style = {
-  display: "block",
-  justifyContent: "center",
-}
-style={style}
-*/
+import Contact from './contact/contact.js'
+import Cert from './fendCert.png'
 
 class App extends Component {
   render () {
@@ -23,14 +17,20 @@ class App extends Component {
     <div>
       <img id='picHead' src={Me} alt='a pic of me' />
       <Header />
+      <h2>A little about me</h2>
+      <Contact />
+      <h2>Projects</h2>
       <div className='cards'>
         <Card name="Blog App" src="https://udacityblogsite.netlify.app/" img={Pic} github="https://github.com/0silverback0/udacityBlog"
         des="Project one. The objective was to build a simple blog site using HTML and CSS. Specifically using flexbox and grid was a requirement for this project" />
         <Card name="Landing Page" src="https://udacitylandingpage.netlify.app/" img={Landing} github="https://github.com/0silverback0/LandingPage" des="This is project two in the frontend
          developer nanodegree.Adding javascript to the project by manipulating the DOM also to make each section active when it is in view" />
         <Card name="Capstone project" src="https://capstonetravelapp.netlify.app/" img={Capstone} github="https://github.com/0silverback0/TravelApp"
-        des="This is the capstone project. I used three API's one to get longitude and latitude coordinance, then used that information to call another API to get the weather for that location
-        and finally used the pixabay API to display a picture of the place to be traveled to. This project also uses webpack, and Sass." />
+        des="This is the capstone project. I used three API's, geonames to get longitude and latitude coordinance, openweathermap, to get weather data, and pixabay to get an image for the location. This project also uses webpack, and Sass." />
+      </div>
+      <h2>Certifications</h2>
+      <div id="certDiv">
+        <img className="cert" src={Cert} alt="Fend" />
       </div>
       <Skills />
       <Footer />
