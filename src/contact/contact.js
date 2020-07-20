@@ -32,6 +32,7 @@ const Contact= () => {
                 most people would avoid is a thrill, and I get a rush when I can
                 complete something that was particularly difficult
             </p>
+            <a style={links} href="./FENDresume.docx" download>Download Resume</a>
             <a style={links} href="https://www.linkedin.com/in/marcellgibbs/">Linkedin</a>
             <a style={links} href="https://github.com/0silverback0">Github</a>
             <a style={links} href="mailto:fourmarz@yahoo.com?subject=I found your portfolio">Email</a>
