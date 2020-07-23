@@ -11,8 +11,8 @@ const img = {
     width: '100px',
     height: '100px',
     position: 'relative',
-    left: '50%',
-    top: '30%'
+    left: '35%',
+    top: '25%'
 }
 const Footer = () => {
     return (
