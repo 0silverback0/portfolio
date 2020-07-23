@@ -10,6 +10,9 @@ import './App.css'
 import Skills from './skillsbar/Skills.js'
 import Contact from './contact/contact.js'
 import Cert from './fendCert.png'
+import Workout from './workoverload.png'
+
+
 
 class App extends Component {
   render () {
@@ -17,7 +20,7 @@ class App extends Component {
     <div>
       <img id='picHead' src={Me} alt='a pic of me' />
       <Header />
-      <h2>A little about me</h2>
+      <h2>About Me</h2>
       <Contact />
       <h2>Projects</h2>
       <div className='cards'>
@@ -27,6 +30,8 @@ class App extends Component {
          developer nanodegree.Adding javascript to the project by manipulating the DOM also to make each section active when it is in view" />
         <Card name="Capstone project" src="https://capstonetravelapp.netlify.app/" img={Capstone} github="https://github.com/0silverback0/TravelApp"
         des="This is the capstone project. I used three API's, geonames to get longitude and latitude coordinance, openweathermap, to get weather data, and pixabay to get an image for the location. This project also uses webpack, and Sass." />
+        <Card name="Workout Overload" src="https://workoutoverload.com/index" img={Workout} des="My first website built after learning HTML, CSS, and Javascript. This fitness site uses javascript to calculate 
+        a persons one rep max also how weight a person should use based on their one rep max. Users can also determine their daliy calorie intake" />
       </div>
       <h2>Certifications</h2>
       <div id="certDiv">
